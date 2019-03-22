@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Faces Tris 3</title>
+    <style>
+      body {
+        margin: 0;
+        display: grid;
+        height: 100vh;
+        box-sizing: border-box;
+        justify-items: center;
+        align-items: end;
+      }
+
+      #image {
+        height: 400px;
+        width: 400px;
+        border: solid blueviolet 3px;
+        background-image: paint(faces-tris-3)
+      }
+    </style>
+  </head>
+  <body>
+    <div id="image"></div>
+    <script>
+      CSS.paintWorklet.addModule('./faces.js');
+    </script>
+  </body>
+</html>
